@@ -80,11 +80,10 @@ var jsPDFEditor = function () {
 			$('.template-picker').html('<p class="source">More examples in <b>examples/js/</b>. We can\'t load them in automatically because of local filesystem security precautions.</p>');
 
 			// Fallback source code
-			var source = "// You'll need to make your image into a Data URL\n";
-			source += "// Use http://dataurl.net/#dataurlmaker\n";
+			var source = "";
 			
 			source += "\n";
-			source +="var sizeFont=14;\n\nvar ngang_hoten=100;\nvar doc_hoten=100;\n\nvar ngang_ngaysinh=100;\nvar doc_ngaysinh=120;\n\nvar ngang_gioitinh=100;\nvar doc_gioitinh=140;\n\nvar ngang_dantoc=100;\nvar doc_dantoc=160;\n\nvar ngang_noisinh=100;\nvar doc_noisinh=180;\n\nvar ngang_lop=100;\nvar doc_lop=200;\n\nvar ngang_xeploaiTN=100;\nvar doc_xeploaiTN=220;\n\nvar ngang_soVB=100;\nvar doc_soVB=240;\n";
+			source +="var sizeFont=14;\nvar sizeFontTP=24;\nvar TruongPhong=\"Phan Đoàn Thái\";\nvar Huyen=\"Phan Thiết\";\nvar Truong=\"Nguyễn Trãi\";\nvar NamTN=\"2018\";\nvar HTdaotao=\"Chính Quy\";\nvar Ngay=\"01\";\nvar Thang=\"01\";\nvar Nam=\"2018\";\n\nvar ngang_hoten=100;\nvar doc_hoten=100;\n\nvar ngang_ngaysinh=100;\nvar doc_ngaysinh=120;\n\nvar ngang_noisinh=100;\nvar doc_noisinh=140;\n\nvar ngang_gioitinh=100;\nvar doc_gioitinh=160;\n\nvar ngang_dantoc=150;\nvar doc_dantoc=160;\n\nvar ngang_truong=100;\nvar doc_truong=180;\n\nvar ngang_NamTN=100;\nvar doc_NamTN=200;\n\nvar ngang_xeploaiTN=100;\nvar doc_xeploaiTN=220;\n\nvar ngang_HTdaotao=150;\nvar doc_HTdaotao=220;\n\nvar ngang_huyen=100;\nvar doc_huyen=240;\n\nvar ngang_ngay=200;\nvar doc_ngay=240;\n\nvar ngang_thang=250;\nvar doc_thang=240;\n\nvar ngang_nam=300;\nvar doc_nam=240;\n\nvar ngang_truongphong=100;\nvar doc_truongphong=260;\n\nvar ngang_soVB=100;\nvar doc_soVB=280;\n";
 			// source += "var doc = new jsPDF({unit: \"pt\",orientation: \"p\",lineHeight: 1.2});\n";
 			// source += "\n";
 			
@@ -190,11 +189,20 @@ var jsPDFEditor = function () {
 						
 						doc.text(hoten, ngang_hoten, doc_hoten, 0);
 						doc.text(ngaysinh, ngang_ngaysinh, doc_ngaysinh, 0);
+						doc.text(noisinh, ngang_noisinh, doc_noisinh, 0);
 						doc.text(gioitinh, ngang_gioitinh, doc_gioitinh, 0);
 						doc.text(dantoc, ngang_dantoc, doc_dantoc, 0);
-						doc.text(noisinh, ngang_noisinh, doc_noisinh, 0);
-						doc.text(lop, ngang_lop, doc_lop, 0);
+						doc.text(Truong, ngang_truong, doc_truong, 0);
+						doc.text(NamTN, ngang_NamTN, doc_NamTN, 0);
 						doc.text(xltn, ngang_xeploaiTN, doc_xeploaiTN, 0);
+						doc.text(HTdaotao, ngang_HTdaotao, doc_HTdaotao, 0);
+						doc.text(Huyen, ngang_huyen, doc_huyen, 0);
+						doc.text(Ngay, ngang_ngay, doc_ngay, 0);
+						doc.text(Thang, ngang_thang, doc_thang, 0);
+						doc.text(Nam, ngang_nam, doc_nam, 0);
+						doc.setFontSize(sizeFontTP);
+						doc.text(TruongPhong, ngang_truongphong, doc_truongphong, 0);
+						doc.setFontSize(sizeFont);
 						doc.text(sovb, ngang_soVB, doc_soVB, 0);
 						
 						if(gg.length-i>1)
