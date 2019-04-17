@@ -184,10 +184,9 @@ var jsPDFEditor = function () {
 						var gioitinh=item[Object.keys(item)[3]];
 						var dantoc=item[Object.keys(item)[4]];
 						var noisinh=item[Object.keys(item)[5]];
-						var lop=item[Object.keys(item)[6]];
-						var Truong=item[Object.keys(item)[7]];
-						var xltn=item[Object.keys(item)[8]];
-						var sovb=item[Object.keys(item)[9]];
+						var Truong=item[Object.keys(item)[6]];
+						var xltn=item[Object.keys(item)[7]];
+						var sovb=item[Object.keys(item)[8]];
 						
 						doc.text(hoten.toUpperCase(), ngang_hoten, doc_hoten, 0);
 						doc.text(ngaysinh, ngang_ngaysinh, doc_ngaysinh, 0);
