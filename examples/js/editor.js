@@ -83,7 +83,7 @@ var jsPDFEditor = function () {
 			var source = "";
 			
 			source += "\n";
-			source +="var sizeFont=12;\nvar sizeFontTP=18;\nvar TruongPhong=\"Nguyễn Minh Quốc\";\nvar Huyen=\"Bình Thuận\";\nvar Huyen2=\"Hàm Thuận Nam\";\nvar NamTN=\"2018\";\nvar HTdaotao=\"Chính Quy\";\nvar Ngay=\"01\";\nvar Thang=\"01\";\nvar Nam=\"2018\";\n\nvar ngang_hoten=135;\nvar doc_hoten=112;\n\nvar ngang_ngaysinh=200;\nvar doc_ngaysinh=145;\n\nvar ngang_noisinh=135;\nvar doc_noisinh=162;\n\nvar ngang_gioitinh=142;\nvar doc_gioitinh=182;\n\nvar ngang_dantoc=270;\nvar doc_dantoc=182;\n\nvar ngang_truong=175;\nvar doc_truong=202;\n\nvar ngang_NamTN=170;\nvar doc_NamTN=220;\n\nvar ngang_xeploaiTN=180;\nvar doc_xeploaiTN=237;\n\nvar ngang_HTdaotao=385;\nvar doc_HTdaotao=237;\n\nvar ngang_huyen=295;\nvar doc_huyen=252;\n\nvar ngang_ngay=384;\nvar doc_ngay=252;\n\nvar ngang_thang=440;\nvar doc_thang=252;\n\nvar ngang_nam=485;\nvar doc_nam=252;\n\nvar ngang_huyen2=375;\nvar doc_huyen2=290\n\nvar ngang_truongphong=350;\nvar doc_truongphong=390;\n\nvar ngang_soVB=195;\nvar doc_soVB=350;\n";
+			source +="var sizeFont=12;\nvar sizeFontTP=18;\nvar TruongPhong=\"Nguyễn Minh Quốc\";\nvar Huyen=\"Bình Thuận\";\nvar Huyen2=\"Hàm Thuận Nam\";\nvar NamTN=\"2018\";\nvar HTdaotao=\"Chính Quy\";\nvar Ngay=\"01\";\nvar Thang=\"01\";\nvar Nam=\"2018\";\n\nvar ngang_hoten=145;\nvar doc_hoten=99;\n\nvar ngang_ngaysinh=200;\nvar doc_ngaysinh=116;\n\nvar ngang_noisinh=145;\nvar doc_noisinh=135;\n\nvar ngang_gioitinh=160;\nvar doc_gioitinh=153;\n\nvar ngang_dantoc=285;\nvar doc_dantoc=153;\n\nvar ngang_truong=182;\nvar doc_truong=172;\n\nvar ngang_NamTN=190;\nvar doc_NamTN=191;\n\nvar ngang_xeploaiTN=195;\nvar doc_xeploaiTN=210;\n\nvar ngang_HTdaotao=400;\nvar doc_HTdaotao=210;\n\nvar ngang_huyen=293;\nvar doc_huyen=229;\n\nvar ngang_ngay=390;\nvar doc_ngay=229;\n\nvar ngang_thang=444;\nvar doc_thang=230;\n\nvar ngang_nam=492;\nvar doc_nam=229;\n\nvar ngang_huyen2=368;\nvar doc_huyen2=272\n\nvar ngang_truongphong=350;\nvar doc_truongphong=380;\n\nvar ngang_soVB=195;\nvar doc_soVB=340;\n";
 			// source += "var doc = new jsPDF({unit: \"pt\",orientation: \"p\",lineHeight: 1.2});\n";
 			// source += "\n";
 			
@@ -168,6 +168,7 @@ var jsPDFEditor = function () {
 
 					doc.addFont("Arimo-Regular.ttf", "Arimo", "normal");
 					doc.addFont("times.ttf", "Times", "normal");
+					doc.addFont("timesi.ttf", "Times", "italic");
 					//doc.addFont("Arimo-Bold.ttf", "Arimo", "bold");
 					doc.setFont("Times");
 					doc.setFontType("normal");
@@ -197,10 +198,12 @@ var jsPDFEditor = function () {
 						doc.text(NamTN, ngang_NamTN, doc_NamTN, 0);
 						doc.text(xltn, ngang_xeploaiTN, doc_xeploaiTN, 0);
 						doc.text(HTdaotao, ngang_HTdaotao, doc_HTdaotao, 0);
+						doc.setFontType("italic");
 						doc.text(Huyen, ngang_huyen, doc_huyen, 0);
 						doc.text(Ngay, ngang_ngay, doc_ngay, 0);
 						doc.text(Thang, ngang_thang, doc_thang, 0);
 						doc.text(Nam, ngang_nam, doc_nam, 0);
+						doc.setFontType("normal");
 						doc.text(Huyen2, ngang_huyen2, doc_huyen2, 0);
 						doc.setFontSize(sizeFontTP);
 						doc.text(TruongPhong, ngang_truongphong, doc_truongphong, 0);
