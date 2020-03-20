@@ -198,7 +198,7 @@ var jsPDFEditor = function () {
 						doc.text(xltn, ngang_xeploaiTN, doc_xeploaiTN, 0);
 						doc.text(HTdaotao, ngang_HTdaotao, doc_HTdaotao, 0);
 						doc.setFontType("italic");
-						doc.setFontSize(sizeFont-1);
+						doc.setFontSize(sizeFont-2);
 						doc.text(Huyen, ngang_huyen, doc_huyen, 0);
 						doc.text(Ngay, ngang_ngay, doc_ngay, 0);
 						doc.text(Thang, ngang_thang, doc_thang, 0);
