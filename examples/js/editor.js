@@ -169,6 +169,7 @@ var jsPDFEditor = function () {
 					doc.addFont("Arimo-Regular.ttf", "Arimo", "normal");
 					doc.addFont("times.ttf", "Times", "normal");
 					doc.addFont("timesi.ttf", "Times", "italic");
+					doc.addFont("timesb.ttf", "Times", "bold");
 					//doc.addFont("Arimo-Bold.ttf", "Arimo", "bold");
 					doc.setFont("Times");
 					doc.setFontType("normal");
@@ -206,6 +207,7 @@ var jsPDFEditor = function () {
 						doc.setFontType("normal");
 						doc.setFontSize(sizeFont);
 						doc.text(Huyen2, ngang_huyen2, doc_huyen2, 0);
+						doc.setFontType("bold");
 						doc.setFontSize(sizeFontTP);
 						doc.text(TruongPhong, ngang_truongphong, doc_truongphong, 0);
 						doc.setFontSize(sizeFont);
