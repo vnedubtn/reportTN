@@ -217,7 +217,7 @@ var jsPDFEditor = function () {
 						doc.text(sovb, ngang_soVB, doc_soVB, 0);
 						
 						if(gg.length-i>1)
-							doc.addPage('a5','l');
+							doc.addPage('a5','l'); 
 					};
 				}
 				if (typeof doc !== 'undefined') try {
