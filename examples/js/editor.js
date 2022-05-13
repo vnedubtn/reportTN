@@ -211,6 +211,8 @@ var jsPDFEditor = function () {
 						doc.setFontType("bold");
 						doc.setFontSize(sizeFontTP);
 						doc.text(TruongPhong, ngang_truongphong, doc_truongphong, 0);
+						doc.setFont("Times");
+						doc.setFontType("normal");
 						doc.setFontSize(sizeFont);
 						doc.text(sovb, ngang_soVB, doc_soVB, 0);
 						
