@@ -208,7 +208,8 @@ var jsPDFEditor = function () {
 						doc.text(Thang, ngang_thang, doc_thang, 0);
 						doc.text(Nam, ngang_nam, doc_nam, 0);
 						
-						doc.setFontType("bold");
+						doc.setFontType("normal");
+						//doc.setFontType("bold");
 						doc.setFontSize(sizeFont);
 						doc.text(Huyen2, ngang_huyen2, doc_huyen2, 0);
 						doc.setFontSize(sizeFontTP);
