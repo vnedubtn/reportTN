@@ -170,7 +170,7 @@ var jsPDFEditor = function () {
 					doc.addFont("times.ttf", "Times", "normal");
 					doc.addFont("timesi.ttf", "Times", "italic");
 					
-					doc.addFont("Arimo-Bold.ttf", "Arimo", "bold");
+					//doc.addFont("Arimo-Bold.ttf", "Arimo", "bold");
 					doc.setFont("Times");
 					doc.setFontType("normal");
 					//doc.setFontSize(sizeFont);
