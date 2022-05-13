@@ -189,6 +189,9 @@ var jsPDFEditor = function () {
 						var xltn=item[Object.keys(item)[7]];
 						var sovb=item[Object.keys(item)[8]];
 						
+						doc.setFont("Times");
+						doc.setFontType("normal");
+						doc.setFontSize(sizeFont);
 						doc.text(hoten.toUpperCase(), ngang_hoten, doc_hoten, 0);
 						doc.text(ngaysinh, ngang_ngaysinh, doc_ngaysinh, 0);
 						doc.text(noisinh, ngang_noisinh, doc_noisinh, 0);
@@ -199,20 +202,17 @@ var jsPDFEditor = function () {
 						doc.text(xltn, ngang_xeploaiTN, doc_xeploaiTN, 0);
 						doc.text(HTdaotao, ngang_HTdaotao, doc_HTdaotao, 0);
 						doc.setFontType("italic");
-						doc.setFontSize(sizeFont-2);
+						doc.setFontSize(sizeFont);
 						doc.text(Huyen, ngang_huyen, doc_huyen, 0);
 						doc.text(Ngay, ngang_ngay, doc_ngay, 0);
 						doc.text(Thang, ngang_thang, doc_thang, 0);
 						doc.text(Nam, ngang_nam, doc_nam, 0);
-						doc.setFontType("normal");
-						doc.setFontSize(sizeFont);
-						doc.text(Huyen2, ngang_huyen2, doc_huyen2, 0);
 						doc.setFont("Arimo");
 						doc.setFontType("bold");
+						doc.setFontSize(sizeFont);
+						doc.text(Huyen2, ngang_huyen2, doc_huyen2, 0);
 						doc.setFontSize(sizeFontTP);
 						doc.text(TruongPhong, ngang_truongphong, doc_truongphong, 0);
-						doc.setFont("Times");
-						doc.setFontType("normal");
 						doc.setFontSize(sizeFont);
 						doc.text(sovb, ngang_soVB, doc_soVB, 0);
 						
