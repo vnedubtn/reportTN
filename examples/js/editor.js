@@ -173,7 +173,7 @@ var jsPDFEditor = function () {
 					doc.addFont("Arimo-Bold.ttf", "Arimo", "bold");
 					doc.setFont("Times");
 					doc.setFontType("normal");
-					doc.setFontSize(sizeFont);
+					//doc.setFontSize(sizeFont);
 					//doc.text("rồi", cngang, cdoc, 0);
 					//doc.addPage('a5','l');
 					var gg=job[Object.keys(job)[0]];
@@ -189,7 +189,7 @@ var jsPDFEditor = function () {
 						var xltn=item[Object.keys(item)[7]];
 						var sovb=item[Object.keys(item)[8]];
 						
-						doc.setFont("Times");
+						
 						doc.setFontType("normal");
 						doc.setFontSize(sizeFont);
 						doc.text(hoten.toUpperCase(), ngang_hoten, doc_hoten, 0);
@@ -207,7 +207,7 @@ var jsPDFEditor = function () {
 						doc.text(Ngay, ngang_ngay, doc_ngay, 0);
 						doc.text(Thang, ngang_thang, doc_thang, 0);
 						doc.text(Nam, ngang_nam, doc_nam, 0);
-						doc.setFont("Arimo");
+						
 						doc.setFontType("bold");
 						doc.setFontSize(sizeFont);
 						doc.text(Huyen2, ngang_huyen2, doc_huyen2, 0);
